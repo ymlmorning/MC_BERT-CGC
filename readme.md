@@ -3,7 +3,7 @@ This is the optimized code based on the paper [An Embarrassingly Easy but Strong
 Chinese electronic medical record data set is stored in the directory preprocess\outputs\ace2004, we do not share private data.
 
 ```shell
-python train_new_bert.py -n 3 --lr 1e-4 --cnn_dim 160 --biaffine_size 200 --n_head 5 -b 5 -d ace2004 --logit_drop 0 --cnn_depth 1 |tee result_bert//result1.txt
+python train_new_bert4.py -n 3 --lr 1e-4 --cnn_dim 160 --biaffine_size 200 --n_head 5 -b 5 -d ace2004 --logit_drop 0 --cnn_depth 1 |tee result_bert//result4.txt
 ```
 
 Here, we set `n_heads`, `cnn_dim` and `biaffine_size` for small number of parameters, based on our experiment, reduce `n_head` and
